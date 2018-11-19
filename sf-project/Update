@@ -1,0 +1,2 @@
+# in both `.env` and `.env.dist` files
+DATABASE_URL=mysql://root@mysql/symfony
