@@ -1,7 +1,6 @@
 .PHONY:
 install-deps:
 	docker-compose run --rm php composer install
-	docker-compose run --rm php composer require --dev symfony/phpunit-bridge
 
 .env:
 	cp .env.dist .env

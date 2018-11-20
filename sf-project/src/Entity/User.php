@@ -21,6 +21,10 @@ class User
      */
     private $username;
 
+    public function User() {
+        
+    }
+
     public function getId(): ?int
     {
         return $this->id;
