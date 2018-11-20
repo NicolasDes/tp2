@@ -12,3 +12,7 @@ start:
 .PHONY:
 stop:
 	docker-compose stop
+
+.PHONY:
+entity:
+	docker-compose run php /app/bin/console make:entity
