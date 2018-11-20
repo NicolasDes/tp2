@@ -28,5 +28,12 @@ services:
     volumes:
       - 'db:/var/lib/mysql'
 
+  flutend:
+    image: fluent/fluentd
+    dockerfile: docker/flutend/Dockerfile
+    volumes:
+      - './docker-monitoring/flutend:/app/flutend'
+      - './docker-monitoring/flutend/fluentd.conf:/app/flutend'
+
 volumes:
   db: {}
